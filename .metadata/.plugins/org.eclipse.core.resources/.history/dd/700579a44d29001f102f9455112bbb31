@@ -1,0 +1,18 @@
+
+public class cmdAuto3 {
+	 String[] Command = {
+             "sh",
+             "-c",
+             "grep http://hogehoge.com hogehoge.log >grep.txt"
+     };
+
+     // Windowsの場合はcmd /cをたたきます
+     if( SystemUtils.IS_OS_WINDOWS ) {
+         Command[0] = "cmd";
+         Command[1] = "/c";
+     }
+
+     Process p = Runtime.getRuntime().exec(Command);
+     p.waitFor();
+	}
+}

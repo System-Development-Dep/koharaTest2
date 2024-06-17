@@ -1,0 +1,8 @@
+public class cmdAuto3 {
+	 public static void main(String[] args) throws Exception{
+	        String[] Command = {"wget -D http://hogehoge.com/ --random-wait"};
+	        Process p = Runtime.getRuntime().exec(Command);
+	        p.waitFor();
+
+	 }
+}

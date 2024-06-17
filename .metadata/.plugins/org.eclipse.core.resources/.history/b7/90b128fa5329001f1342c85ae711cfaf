@@ -1,0 +1,23 @@
+public class cmdAuto3 {
+	 public static void main(String[] args) throws Exception{
+		 
+		 String[] Command = {
+	                "cmd",
+	                "cd /",
+	                "/c",
+	                "mkdir e"
+	        };
+
+	        // Windowsの場合はcmd /cをたたきます
+	        //if( File.separatorChar == '\\' ) {
+	        //    Command[0] = "cmd";
+	        //    Command[1] = "/c";
+	        //}else {
+	        //	System.out.println("error");	        	
+	       // }
+
+	        Process p = Runtime.getRuntime().exec(Command);
+	        p.waitFor();
+
+	 }
+}

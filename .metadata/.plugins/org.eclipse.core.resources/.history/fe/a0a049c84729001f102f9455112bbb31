@@ -1,0 +1,13 @@
+import java.io.IOException;
+
+public class calcAuto {
+	public static void main(String[] args) {
+		Runtime r = Runtime.getRuntime(); //ランタイムを得る
+		try {
+			r.exec("calc"); //電卓を起動
+		}catch(IOException e) {
+			System.out.println(e);
+		}
+	}
+
+}
