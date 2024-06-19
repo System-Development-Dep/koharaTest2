@@ -1,4 +1,3 @@
 INDEX VERSION 1.134+C:\pleiades\2023-09\workspace-auto\.metadata\.plugins\org.eclipse.jdt.core
 1865797976.index
-3691872271.index
 1346713820.index
